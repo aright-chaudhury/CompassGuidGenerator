@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="compass.guid-generator" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Guid</name>
+    <js-module name="Guid" src="www/Guid.js">
+        <clobbers target="Guid" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="Guid">
+                <param name="android-package" value="compass.guid.generator.Guid" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+        <source-file src="src/android/Guid.java" target-dir="src/compass/guid/generator" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="Guid">
+                <param name="ios-package" value="Guid" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/Guid.m" />
+    </platform>
+</plugin>

@@ -1,0 +1,27 @@
+{
+  "name": "compass.guid-generator",
+  "version": "1.0.0",
+  "description": "This is a utility plugin to handle GUID.",
+  "cordova": {
+    "id": "compass.guid-generator",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aright-chaudhury/CompassGuidGenerator.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Compass Digital",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aright-chaudhury/CompassGuidGenerator/issues"
+  },
+  "homepage": "https://github.com/aright-chaudhury/CompassGuidGenerator#readme"
+}
